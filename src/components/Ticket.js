@@ -1,5 +1,5 @@
 import React from "react";
-import CardComponent from "./Card";
+import CardComponent from "./card/Card";
 
 import { WarningFilled } from "@ant-design/icons";
 

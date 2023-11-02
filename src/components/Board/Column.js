@@ -1,5 +1,5 @@
 import React from "react";
-import Ticket from "./Ticket";
+import Ticket from "../Ticket";
 import "./Column.css";
 
 const Column = ({ title, tickets }) => {

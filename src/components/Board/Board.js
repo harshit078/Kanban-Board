@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Select, Button } from "antd";
 import "antd/dist/reset.css";
 import "./Board.css";
-import { fetchTickets } from "./apifetch";
+import { fetchTickets } from "../apifetch";
 import Column from "./Column";
 
 const { Option } = Select;
@@ -39,7 +39,12 @@ const KanbanBoard = () => {
     const groupedTickets = {};
 
     for (const ticket of tickets) {
-      const key = option === "status" ? ticket.status : option === "user" ? ticket.user : ticket.priority;
+      const key =
+        option === "status"
+          ? ticket.status
+          : option === "user"
+          ? ticket.user
+          : ticket.priority;
       if (!groupedTickets[key]) {
         groupedTickets[key] = [];
       }
@@ -87,7 +92,11 @@ const KanbanBoard = () => {
       </div>
       <div className="board-columns">
         {Object.keys(sortedTickets).map((groupTitle) => (
-          <Column key={groupTitle} title={groupTitle} tickets={sortedTickets[groupTitle]} />
+          <Column
+            key={groupTitle}
+            title={groupTitle}
+            tickets={sortedTickets[groupTitle]}
+          />
         ))}
       </div>
     </div>

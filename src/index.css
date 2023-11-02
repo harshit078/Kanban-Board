@@ -1,11 +1,10 @@
 body {
   margin: 0;
-  font-family: -apple-system,'Segoe UI', 'Roboto', 'Oxygen',
-    sans-serif;
+  font-family: -apple-system, "Segoe UI", "Roboto", "Oxygen", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: 'Roboto Mono',
+  font-family: "Roboto Mono";
 }
